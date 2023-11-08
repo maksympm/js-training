@@ -42,8 +42,16 @@
 
 // Об'єкт Math
 // Зведення в ступінь, метод pow
-// const base = 2;
-// const power = 5;
-// const result = Math.pow(base, power);
+// const base = 2; - число
+// const power = 5; - ступінь
+// const result = Math.pow(base, power); - операція зведення
 // console.log(result)
 
+// Генерація псевдовипадкового числа
+// Math.random() - метод повертає довільне число від 0 до 1 при кожному виконанні скрипта
+// Math.round() - математичне зоакруглення числа в дужках
+// Math.random() * (max - min) + min - формула генерації псевдовипадкового числа в діапазоні
+// const max = 100; - вказуємо максимальне число
+// const min = 1; - вказуємо мінімальне число
+// const result = Math.round(Math.random() * (max - min) * min); - застосовуємо формулу і метод заокруглення
+// console.log(result);
