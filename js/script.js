@@ -55,3 +55,21 @@
 // const min = 1; - вказуємо мінімальне число
 // const result = Math.round(Math.random() * (max - min) * min); - застосовуємо формулу і метод заокруглення
 // console.log(result);
+
+// Робота з рядками
+// .length - властивість яка повертає кількість символів в рядку
+// const message = 'В цьому рядку 25 символів';
+// console.log(message.length);
+
+// Конкатенація (об'єднання) рядків
+// const firstName = 'Chelsy';
+// const lastName = 'Emerald';
+// const type = 'VIP';
+// const room = 716;
+// const message = `Гість ${firstName} ${lastName} заселяється до ${type} номера ${room}`;
+// console.log(message);
+
+// // Нормалізація вводу
+// let brand = 'SamSUnG';
+// brand = brand[0] + brand.slice(1).toLowerCase(); до першого індексу додаємо решту іприводимо до нижнього регістру
+// console.log(brand);
