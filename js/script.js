@@ -73,3 +73,21 @@
 // let brand = 'SamSUnG';
 // brand = brand[0] + brand.slice(1).toLowerCase(); до першого індексу додаємо решту іприводимо до нижнього регістру
 // console.log(brand);
+
+// Пошук в рядку
+// .includes() - повертає на своє місце true, або false, чи є в рядку шукане значення
+// const blackListWord1 = 'спам';
+// const blackListWord2 = 'розпродаж';
+// const string1 = 'Привіт, це не спам, перейди за посиланням';
+// const string2 = 'Найбільший РОЗПРОДАЖ року';
+// const string3 = 'Рекламна компанія нового бренду';
+// console.log(string1.includes(blackListWord1));
+// console.log(string1.includes(blackListWord2));
+// console.log(string2.includes(blackListWord1));
+// console.log(string2.toLocaleLowerCase().includes(blackListWord2)); - спочатку приводимо до нижнього регістру, потім перевіряємо наявність шуканого слова
+
+// Оператори порівняння
+
+
+
+
