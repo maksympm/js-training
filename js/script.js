@@ -282,3 +282,28 @@
 // for (let i = 0; i <= 5; i += 1) {
 //     console.log(i);
 // }
+
+// Написати скрипт який підраховує загальну суму зарплат робітників
+// кількість робітників зберігається у змінній employees
+// зарплата кожного робітника це випадкове число выд 500 до 5000
+// записати суму у змінну totalSalary та вивести в консоль
+// 1. зробити змінні
+// const minSalary = 5000;
+// const maxSalary = 50000;
+// const employees = 10;
+// let totalSalary = 0;
+// // 2. перебрати робітників у циклі
+// for (let i = 1; i <= employees; i += 1) {
+//   // 3. сгенерувати випадкову зп
+//   const salary = Math.round(
+//     Math.random() * (maxSalary - minSalary) + minSalary,
+//   );
+//   console.log(`ЗП робітника номер ${i} - ${salary}`);
+//   // 4. додати до totalSalary
+//   totalSalary += salary;
+// }
+// // 5. лог
+// console.log(`totalSalary:`, totalSalary);
+
+// Написати скрипт який підраховує суму всіх парних чисел,
+// які входять в діапазон чисел у змінних min та max.
