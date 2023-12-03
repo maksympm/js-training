@@ -368,7 +368,7 @@
 // - менше 100) не партнер, знижка 0%
 // В результаті вивести повідомлення
 // "Оформлюємо замовлення на суму [сума] зі знижкою [знижка]"
-// const totalSpent = 50;
+// let totalSpent = 2000;
 // let payment = 500;
 // let discount = 0;
 // if (totalSpent >= 100 && totalSpent < 1000) {
@@ -377,10 +377,25 @@
 // } else if (totalSpent >= 1000 && totalSpent < 5000) {
 //   console.log(`Срібний партер, знижка 5%`);
 //   discount = 0.05;
-// } else if (totalSpent > 5000) {
-//   console.log(`Золотий партер, знижка 10%`);
+// } else if (totalSpent >= 5000) {
+//   console.log(`Золотий партнер, знижка 10%`);
 //   discount = 0.1;
 // } else {
 //   console.log(`Не партнер, знижка 0%`);
 // }
-// console.log(`Оформлюємо замовлення на суму ${payment} зі знижкою ${discount*100}%`);
+// payment -= payment * discount
+// console.log(`Оформлюємо замовлення на суму ${payment} зі знижкою ${discount * 100}%`);
+// totalSpent += payment;
+// console.log(`Загальна сума витрат в магазині ${totalSpent}`)
+
+// Масив - можливість зберігати колекцію однотипних даних
+// При створенні складних типів, створюється комірка в пам'яті, а при зверненні до нього звернення іде за посиланням на цю комірку
+
+
+// console.table(friends); - зручний перегляд масивів
+// const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
+// friends[1] = 'Apple'; зміна елементу масиву
+// console.table(friends);
+// const lastIndex = friends.length - 1; - знаходження останнього індексу
+// friends[2]; звернення до елементу масиву
+// console.log(friends[2]); вивід в консоль елеманта масиву
