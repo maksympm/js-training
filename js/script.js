@@ -388,9 +388,8 @@
 // totalSpent += payment;
 // console.log(`Загальна сума витрат в магазині ${totalSpent}`)
 
-// Масив - можливість зберігати колекцію однотипних даних
+// Масив - можливість зберігати колекцію однотипних даних, є складним типом
 // При створенні складних типів, створюється комірка в пам'яті, а при зверненні до нього звернення іде за посиланням на цю комірку
-
 
 // console.table(friends); - зручний перегляд масивів
 // const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
@@ -399,3 +398,26 @@
 // const lastIndex = friends.length - 1; - знаходження останнього індексу
 // friends[2]; звернення до елементу масиву
 // console.log(friends[2]); вивід в консоль елеманта масиву
+// friends[2] = 'John' - зміна елемента масиву
+
+// Перебір масиву
+// за допомогою циклу for
+// const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
+// const lastIndex = friends.length - 1;
+// for (let i = 0; i <= lastIndex; i += 1) {
+//     console.log(friends[i]);
+// }
+
+// зміна елементів масиву за допомогою циклу for
+// const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
+// const lastIndex = friends.length - 1;
+// for (let i = 0; i <= lastIndex; i += 1) {
+//     friends[i] += '-1';
+// }
+// console.table(friends);
+
+// за допомогою циклу for of. Використовується коли не потрібен доступ до індексу, або не потрібно змінювати елемент масиву
+// const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
+// for (const friend of friends) {
+//     console.log(friend)
+// }
