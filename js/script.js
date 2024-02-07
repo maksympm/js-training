@@ -448,3 +448,37 @@
 //   cart[i] = Math.round(cart[i] * 1.1);
 // }
 // console.log(cart);
+
+// Написати скрипт який рахує суму всіх парних чисел у масиві
+// Рішення за допомогою циклу for
+// const numbers = [54, 28, 105, 70, 92, 17, 120, 15, 28, 64, 554, 214, 248, 111];
+// // 1. Зробити змінну total
+// let totalEven = 0;
+// let total = 0;
+// // 2. Перебрати масив
+// for (let i = 0; i < numbers.length; i += 1) {
+//     const number = numbers[i];
+//   console.log(number);
+//   // 3. На кожній ітерації перевірити елемент на парність
+//   if (number % 2 === 0) {
+//     console.log('Парне');
+// 4. якщо парне - додаємо до totalEven
+//     totalEven += number;
+//   } else {
+//     console.log('Не парне');
+//     total += number;
+//   }
+// }
+// console.log(`Сума парних чисел ${totalEven}`);
+// console.log(`Сума непарних чисел ${total}`);
+
+// const numbers = [54, 28, 105, 70, 92, 17, 120, 15, 28, 64, 554, 214, 248, 111];
+// let total = 0;
+// for (const number of numbers) {
+//   console.log(number);
+//   if (number % 2 === 0) {
+//     console.log('Парне');
+//     total += number;
+//   }
+// }
+// console.log(`Сума парних чисел ${total}`);
