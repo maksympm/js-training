@@ -421,3 +421,30 @@
 // for (const friend of friends) {
 //     console.log(friend)
 // }
+
+// Порахувати загальну суму покупок в кошику
+// const cart = [54, 28, 105, 70, 92, 17, 120, 15, 28, 64, 554, 214, 248];
+// 2. Створити змінну total до циклу
+// let total = 0;
+// // 1. Перебрати масив
+// for (let i = 0; i < cart.length; i += 1) {
+// //   console.log(cart[i]);
+//   // 3. Кожен елемент масиву додати до total
+//   total += cart[i];
+// }
+// console.log(`Загальна сума покупок ${total} грн.`);
+
+// Рішення за допомогою for of
+// const cart = [54, 28, 105, 70, 92, 17, 120, 15, 28, 64, 554, 214, 248];
+// let total = 0;
+// for (const value of cart) {
+//   total += value;
+// }
+// console.log(`Загальна сума покупок ${total} грн.`);
+
+// Приклад зі зміною елементів масиву
+// const cart = [54, 28, 105, 70, 92, 17, 120, 15, 28, 64, 554, 214, 248];
+// for (let i = 0; i < cart.length; i += 1) {
+//   cart[i] = Math.round(cart[i] * 1.1);
+// }
+// console.log(cart);
