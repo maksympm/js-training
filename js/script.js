@@ -482,3 +482,34 @@
 //   }
 // }
 // console.log(`Сума парних чисел ${total}`);
+
+// Рішення від зворотнього
+// const numbers = [54, 28, 105, 70, 92, 17, 120, 15, 28, 64, 554, 214, 248, 111];
+// let total = 0;
+// for (const number of numbers) {
+//   console.log(number);
+//   if (number % 2 !== 0) {
+//     console.log('Пропустити цю ітерацію', number);
+
+//     continue;
+//   }
+//   total += number;
+// }
+// console.log(`Сума парних чисел ${total}`);
+
+// Написати скрипт пошука логіна. Якщо логіна немає, вивести повідомлення
+// `Користувача ${} не знайдено`.Якщо логін є, `Користувача ${} знайдено`
+const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4axth3m4n'];
+const loginToFind = 'poly1scute';
+let message = '';
+
+for (let i = 0; i < logins.length; i += 1) {
+  const login = logins[i];
+
+  if (login === loginToFind) {
+    message = `Користувача ${loginToFind} знайдено`;
+    break;
+  }
+  message = `Користувача ${loginToFind} не знайдено`;
+}
+console.log(message);
