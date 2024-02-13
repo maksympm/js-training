@@ -499,17 +499,99 @@
 
 // Написати скрипт пошука логіна. Якщо логіна немає, вивести повідомлення
 // `Користувача ${} не знайдено`.Якщо логін є, `Користувача ${} знайдено`
-const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4axth3m4n'];
-const loginToFind = 'poly1scute';
-let message = '';
+// Рішення за допомогою циклу for
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4axth3m4n'];
+// const loginToFind = 'poly1scute';
+// let message = '';
+// for (let i = 0; i < logins.length; i += 1) {
+//   const login = logins[i];
 
-for (let i = 0; i < logins.length; i += 1) {
-  const login = logins[i];
+//   if (login === loginToFind) {
+//     message = `Користувача ${loginToFind} знайдено`;
+//     break;
+//   }
+//   message = `Користувача ${loginToFind} не знайдено`;
+// }
+// console.log(message);
 
-  if (login === loginToFind) {
-    message = `Користувача ${loginToFind} знайдено`;
-    break;
-  }
-  message = `Користувача ${loginToFind} не знайдено`;
+// Рішення за допомогою for of
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4axth3m4n'];
+// const loginToFind = 'poly1scute';
+// let message = '';
+// for (const login of logins) {
+//   if (login === loginToFind) {
+//     message = `Користувача ${loginToFind} знайдено`;
+//     break;
+//   }
+//   message = `Користувача ${loginToFind} не знайдено`;
+// }
+// console.log(message);
+
+// Рішення з використанням методу .includes
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4axth3m4n'];
+// const loginToFind = 'poly1scute';
+// console.log(logins.includes(loginToFind));
+
+// Використання тернарного оператора
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4axth3m4n'];
+// const loginToFind = 'poly1scute';
+// const message = logins.includes(loginToFind)
+//   ? `Користувача ${loginToFind} знайдено`
+//   : `Користувача ${loginToFind} не знайдено`;
+// console.log(message);
+
+// Написати скрипт пошуку найменшого числа в масиві, за умови, що числа унікальні
+// const numbers = [51, 18, 13, 24, 7, 85, 19];
+// let smallestNumber = numbers[0];
+
+// for (const number of numbers) {
+//   if (number < smallestNumber) {
+//     smallestNumber = number;
+//   }
+// }
+// console.log('Найменше число', smallestNumber);
+
+// Написати скрипт, який об'єднує всі елементи масиву в одно рядкове значення. Елементів може бути довільна кількість
+// Елементи масиву розділені комою.
+
+// Рішення за допомогою for of
+// const friends = ['Mango', 'Polly', 'Kiwi', 'Ajax'];
+// let string = '';
+// for (const friend of friends) {
+//   string += friend + ',';
+// }
+// string = string.slice(0, string.length - 1);
+// console.log(string);
+
+// // Рышення за допомогою методу.join (не деструктивний метод)
+// const friends = ['Mango', 'Polly', 'Kiwi', 'Ajax'];
+// let string = friends.join(',');
+// console.log(string)
+
+// Написати скрипт, який змінює регістр кожного символу в рядку на протилежний. Наприклад рядок "JavaScript" змінюється на "jAVAsCRIPT"
+// Рішення за допомогою методу .split
+
+const string = 'JavaScript';
+const letters = string.split('');
+let invertedString = '';
+
+console.log(letters);
+
+for (const letter of letters) {
+  // console.log(letter);
+
+  // if (letter === letter.toLowerCase()) {
+  //   console.log(`Ця літера в нижньому регістрі - ${letter}`);
+  //   invertedString += letter.toUpperCase();
+  // } else {
+  //   console.log(`Ця літера у верхньому регістрі - ${letter}`);
+  //   invertedString += letter.toLowerCase();
+  // }
+
+  // Рішення за допомогою тернарного оператора
+  invertedString +=
+    letter === letter.toLowerCase()
+      ? letter.toUpperCase()
+      : letter.toLowerCase();
 }
-console.log(message);
+console.log(`invertedString: ${invertedString}`);
