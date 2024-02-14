@@ -641,3 +641,33 @@
 // const index = cards.indexOf(cardToUpdate);
 // cards.splice(index, 1, newCard);
 // console.table(cards);
+
+// ----------Функції----------
+
+// const add = function (x, y) {
+//   console.log(x);
+//   console.log(y);
+//   console.log(`Виконується функція add`);
+//   return x + y;
+// };
+
+// const r1 = add(5, 3);
+// console.log(r1);
+
+// const r2 = add(10, 15);
+// console.log(r2);
+
+// const r3 = add(30, 50);
+// console.log(r3);
+
+const fn = function () {
+  return 555;
+
+  console.log(1); 
+
+  console.log(2);
+
+  console.log(3);
+};
+
+console.log(fn());
