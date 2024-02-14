@@ -563,7 +563,7 @@
 // string = string.slice(0, string.length - 1);
 // console.log(string);
 
-// // Рышення за допомогою методу.join (не деструктивний метод)
+// // Рішення за допомогою методу.join (не деструктивний метод)
 // const friends = ['Mango', 'Polly', 'Kiwi', 'Ajax'];
 // let string = friends.join(',');
 // console.log(string)
@@ -571,27 +571,73 @@
 // Написати скрипт, який змінює регістр кожного символу в рядку на протилежний. Наприклад рядок "JavaScript" змінюється на "jAVAsCRIPT"
 // Рішення за допомогою методу .split
 
-const string = 'JavaScript';
-const letters = string.split('');
-let invertedString = '';
+// const string = 'JavaScript';
+// const letters = string.split('');
+// let invertedString = '';
+// console.log(letters);
+// for (const letter of letters) {
+//   // console.log(letter);
+//   // if (letter === letter.toLowerCase()) {
+//   //   console.log(`Ця літера в нижньому регістрі - ${letter}`);
+//   //   invertedString += letter.toUpperCase();
+//   // } else {
+//   //   console.log(`Ця літера у верхньому регістрі - ${letter}`);
+//   //   invertedString += letter.toLowerCase();
+//   // }
 
-console.log(letters);
+//   // Рішення за допомогою тернарного оператора
+//   invertedString +=
+//     letter === letter.toLowerCase()
+//       ? letter.toUpperCase()
+//       : letter.toLowerCase();
+// }
+// console.log(`invertedString: ${invertedString}`);
 
-for (const letter of letters) {
-  // console.log(letter);
+// Робимо slug в URL з назви статті 'Top 10 benefits of React framework'. Заголовок статті складається тільки з літер та пробілів.
+// Маємо отримати Top-10-benefits-of-react-framework
+// const title = 'Top 10 benefits of React framework';
+// const normalizeTitle = title.toLowerCase();
+// console.log(normalizeTitle);
+// const words = normalizeTitle.split(' ');
+// console.log(words);
+// const slug = words.join('-');
+// console.log(slug)
 
-  // if (letter === letter.toLowerCase()) {
-  //   console.log(`Ця літера в нижньому регістрі - ${letter}`);
-  //   invertedString += letter.toUpperCase();
-  // } else {
-  //   console.log(`Ця літера у верхньому регістрі - ${letter}`);
-  //   invertedString += letter.toLowerCase();
-  // }
+// // Рішення за допомогою ланцюжка викликів(декларативний код)
+// const slug1 = title.toLowerCase().split(' ').join('-');
+// console.log(slug1);
 
-  // Рішення за допомогою тернарного оператора
-  invertedString +=
-    letter === letter.toLowerCase()
-      ? letter.toUpperCase()
-      : letter.toLowerCase();
-}
-console.log(`invertedString: ${invertedString}`);
+// Написати скрипт, який рахує суму елементів двох масивів
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+// let total = 0;
+// const numbers = array1.concat(array2);
+// console.log(numbers);
+// for (const number of numbers) {
+//   total += number;
+// }
+// console.log(total);
+
+// Метод splice (деструктивний)
+// const cards = ['Картка-1', 'Картка-2', 'Картка-3', 'Картка-4', 'Картка-5'];
+// console.table(cards);
+// Видалення (за індексом), метод indexOf()
+// const cardToRemove = 'Картка-3';
+// const index = cards.indexOf(cardToRemove);
+// cards.splice(index, 1);
+// console.table(cards);
+
+// Додавання (за індексом)
+// const cardToInsert = 'Картка-6';
+// const index = 3;
+// // cards.splice(з якого індексу вставити, нічого не видаляти, що вставляємо);
+// cards.splice(index, 0, cardToInsert);
+// console.table(cards);
+
+// Оновлення (за індексом)(заміна з видаленням)
+// const cardToUpdate = 'Картка-4';
+// const newCard = 'Картка-4 оновлена';
+// cards.splice(з якого індексу вставити, видалити елемент, що вставляємо замість видаленого);
+// const index = cards.indexOf(cardToUpdate);
+// cards.splice(index, 1, newCard);
+// console.table(cards);
