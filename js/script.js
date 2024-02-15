@@ -660,14 +660,26 @@
 // const r3 = add(30, 50);
 // console.log(r3);
 
-const fn = function () {
-  return 555;
+// const fn = function () {
+//   console.log(1);
+//   console.log(2);
+//   console.log(3);
+//   return 555;
+// };
+// console.log(fn());
 
-  console.log(1); 
+// const fnA = function () {
+//   console.log(`Виклик функції A`);
+//   fnB();
+// };
 
-  console.log(2);
+// const fnB = function () {
+//   console.log(`Виклик функції B`);
+//   fnC();
+// };
 
-  console.log(3);
-};
+// const fnC = function () {
+//   console.log(`Виклик функції C`);
+// };
 
-console.log(fn());
+// fnA();
