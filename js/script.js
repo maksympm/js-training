@@ -748,10 +748,30 @@
 // logItems(['клавіатура', 'навушники', 'годинник']);
 
 // Написати функцію findLogin(allLogins, login), для пошуку логіна
-const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4axth3m4n'];
-const findLogin = function (AllLogins, loginToFind) {};
 
-console.log(findLogin(logins, 'avacod3r'));
-console.log(findLogin(logins, 'k1widab3st'));
-console.log(findLogin(logins, 'jam4l'));
-console.log(findLogin(logins, 'poly1scute'));
+// Рішення за допомогою for of
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4axth3m4n'];
+// const findLogin = function (allLogins, loginToFind) {
+//   for (const login of allLogins) {
+//     if (login === loginToFind) {
+//       return `Користувача ${loginToFind} знайдено`;
+//     }
+//   }
+//   return `Користувача ${loginToFind} не знайдено`;
+// };
+// console.log(findLogin(logins, 'avacod3r'));
+// console.log(findLogin(logins, 'k1widab3st'));
+// console.log(findLogin(logins, 'jam4l'));
+// console.log(findLogin(logins, 'poly1scute'));
+
+// Рішення за допомогою тернарного оператора
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4axth3m4n'];
+// const findLogin = function (allLogins, loginToFind) {
+//   return allLogins.includes(loginToFind)
+//     ? `Користувача ${loginToFind} знайдено`
+//     : `Користувача ${loginToFind} не знайдено`;
+// };
+// console.log(findLogin(logins, 'avacod3r'));
+// console.log(findLogin(logins, 'k1widab3st'));
+// console.log(findLogin(logins, 'jam4l'));
+// console.log(findLogin(logins, 'poly1scute'));
