@@ -1,0 +1,33 @@
+/* body {
+  
+  background-image: linear-gradient(125deg, #eb5757, #000000);
+  animation: bganimation 14s infinite;
+} */
+body {
+  background-image: linear-gradient(
+    125deg,
+    #ef32d9,
+    #89fffd
+      /* #b2fefa,
+    #0ed2f7,
+    #6190e8,
+    #a7bfe8,
+    #b06ab3,
+    #ffafbd,
+    #ffc3a0,
+    #ec6ead */
+  );
+  background-size: 400% 400%;
+  animation: bganimation 60s infinite;
+}
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -683,3 +683,75 @@
 // };
 
 // fnA();
+
+// const friendPlayBanjo = function(friendName){
+
+// }
+// console.log(friendPlayBanjo(Paul))
+
+// function areYouPlayingBanjo(name) {
+//   const nameToArray = name.split('');
+//   const firstIndex = nameToArray[0];
+//   let message;
+//   if (firstIndex.toLocaleLowerCase() === 'r') {
+//     message = `${name} plays banjo`;
+//   } else {
+//     message = `${name} does not play banjo`;
+//   }
+//   return message;
+// }
+// console.log(areYouPlayingBanjo('Ringo'));
+
+// Щодня оренда автомобіля коштує $40. Якщо ви берете машину в оренду на 7 і більше днів, ви отримуєте знижку $50 на загальну суму.
+// Або, якщо ви орендуєте машину на 3 і більше днів, ви отримаєте знижку $20 на загальну суму.
+// function rentalCarCost(d) {
+//     const costPerDay = 40;
+//     let totalCoast = d * costPerDay;
+//     if(d >= 7){
+//         totalCoast -= 50;
+//     } else if(d >= 3) {
+//         totalCoast -= 20;
+//     }
+//     return totalCoast
+//   }
+//   console.log(rentalCarCost(7))
+
+// Написати функцію, яка перетворює вхідний рядок у верхній регістр.
+// function makeUpperCase(str) {
+//   return str.toUpperCase();
+// }
+// console.log(makeUpperCase('hello'));
+
+// Написати функцію calculateTotalPrice(items), яка приймає масив цін і повертає їх суму
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+
+// const calculateTotalPrice = function (items) {
+//   console.log(items);
+//   let total = 0;
+//   for (const item of items) {
+//     total += item;
+//   }
+//   return total;
+// };
+// console.log(calculateTotalPrice([1, 2, 3]));
+// console.log(calculateTotalPrice([5, 10, 15, 20]));
+// console.log(calculateTotalPrice([100, 200, 300]));
+
+// Написати функцію logItems(items), яка перебирає і логує масив
+// const logItems = function (items) {
+//   for (const item of items) {
+//     console.log(item);
+//   }
+// };
+// logItems(['Mango', 'Kiwi', 'Poly', 'Ajax']);
+// logItems([1, 2, 3, 4, 5]);
+// logItems(['клавіатура', 'навушники', 'годинник']);
+
+// Написати функцію findLogin(allLogins, login), для пошуку логіна
+const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4axth3m4n'];
+const findLogin = function (AllLogins, loginToFind) {};
+
+console.log(findLogin(logins, 'avacod3r'));
+console.log(findLogin(logins, 'k1widab3st'));
+console.log(findLogin(logins, 'jam4l'));
+console.log(findLogin(logins, 'poly1scute'));
