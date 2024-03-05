@@ -775,3 +775,33 @@
 // console.log(findLogin(logins, 'k1widab3st'));
 // console.log(findLogin(logins, 'jam4l'));
 // console.log(findLogin(logins, 'poly1scute'));
+
+// Напишіть програму, яка знаходить суму всіх чисел від 1 до num. Число завжди буде додатним цілим числом більшим за 0.
+// Ваша функція повинна повертати лише результат, те, що відображається в дужках у прикладі нижче, є тим, як досягається цей результат, і не є його частиною, дивіться приклади тестів.
+// const summation = function (num) {
+//   console.log(num);
+//   let total = 0;
+//   for (let i = 0; i <= num; i += 1) {
+//     total += i;
+//   }
+//   return total;
+// };
+// console.log(summation([5]));
+
+// Ваша мета - створити функцію, яка видаляє перший та останній символи рядка. Функція приймає один параметр - початковий рядок.
+// Вам не потрібно турбуватися про рядки з довжиною менше двох символів.
+// function removeChar(str) {
+//   const strToArray = str.split('');
+//   const lastIndex = str.length - 1;
+//   const delFirstElement = strToArray.splice(1);
+//   const delLastElement = delFirstElement.pop();
+//   return delFirstElement.join('');
+// }
+// console.log(removeChar('повертати'));
+
+// function removeChar(str) {
+//   return str.slice(1,- 1);
+// }
+// console.log(removeChar('функція'));
+
+
