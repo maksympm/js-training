@@ -4,27 +4,30 @@
   animation: bganimation 14s infinite;
 } */
 body {
-  background-image: linear-gradient(125deg,
-      #ef32d9,
-      #89fffd,
-      #b2fefa,
-      #0ed2f7,
-      #6190e8,
-      #a7bfe8,
-      #b06ab3,
-      #ffafbd,
-      #ffc3a0,
-      #ec6ead);
+  background-image: linear-gradient(
+    125deg,
+    #ffffff,
+    #ef32d9,
+    #89fffd,
+    #b2fefa,
+    #0ed2f7,
+    #6190e8,
+    #a7bfe8,
+    #b06ab3,
+    #ffafbd,
+    #ffc3a0,
+    #ec6ead
+  );
   background-size: 400% 400%;
-  animation: bganimation 60s infinite;
-  color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
+  animation: bganimation 10s infinite;
+  color: #ffffffc9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  font-family: Manrope, sans-serif;
+  font-weight: 900;
 }
 
 @keyframes bganimation {
@@ -42,16 +45,13 @@ body {
 }
 
 .key {
-  font-size: 15vw;
+  font-size: 550px;
   display: inline-block;
-  letter-spacing: -1vw;
+  letter-spacing: 25px;
   transition: transform 0.2s;
 }
 
-
-
 @keyframes pressDown1 {
-
   30%,
   40%,
   100% {
@@ -59,12 +59,11 @@ body {
   }
 
   35% {
-    transform: translateY(10px);
+    transform: translateY(100px);
   }
 }
 
 @keyframes pressDown2 {
-
   70%,
   80%,
   100% {
@@ -72,12 +71,11 @@ body {
   }
 
   75% {
-    transform: translateY(10px);
+    transform: translateY(100px);
   }
 }
 
 @keyframes pressDown3 {
-
   30%,
   40%,
   100% {
@@ -85,12 +83,11 @@ body {
   }
 
   35% {
-    transform: translateY(10px);
+    transform: translateY(100px);
   }
 }
 
 @keyframes pressDown4 {
-
   40%,
   50%,
   100% {
@@ -103,7 +100,6 @@ body {
 }
 
 @keyframes pressDown5 {
-
   20%,
   30%,
   100% {
@@ -116,7 +112,6 @@ body {
 }
 
 @keyframes pressDown6 {
-
   60%,
   70%,
   100% {
@@ -129,7 +124,6 @@ body {
 }
 
 @keyframes pressDown7 {
-
   10%,
   20%,
   100% {
@@ -142,7 +136,6 @@ body {
 }
 
 @keyframes pressDown8 {
-
   35%,
   45%,
   100% {
@@ -153,8 +146,6 @@ body {
     transform: translateY(10px);
   }
 }
-
-
 
 .key:nth-child(1) {
   animation: pressDown1 2s infinite;
@@ -188,9 +179,6 @@ body {
   animation: pressDown8 3.2s infinite;
 }
 
-
-
-
 /* extra stuff */
 .jux-linx {
   display: flex;
@@ -206,7 +194,7 @@ body {
 
 a {
   text-decoration: none;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: white;
