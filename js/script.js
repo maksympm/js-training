@@ -804,4 +804,16 @@
 // }
 // console.log(removeChar('функція'));
 
+// const keys = document.querySelectorAll('.key');
+
+// function updateColors() {
+//   for (const key of keys) {
+//     const hue = Math.floor(Math.random() * 360);
+//     key.style.color = `hsl(${hue}, 100%, 50%)`;
+//   }
+// }
+
+// setInterval(updateColors, 1000);
+
+
 
