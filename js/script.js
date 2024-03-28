@@ -814,6 +814,11 @@
 // }
 
 // setInterval(updateColors, 1000);
+const magicBtn = document.querySelector('.js-magic-btn');
 
-
-
+magicBtn.addEventListener('click', ()=>{const imageEl = document.querySelector('.hero__image');
+console.log('imageEl', imageEl);
+console.log(imageEl.src);
+imageEl.src =
+  'https://images.pexels.com/photos/8434606/pexels-photo-8434606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+})
