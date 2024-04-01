@@ -799,26 +799,18 @@
 // }
 // console.log(removeChar('повертати'));
 
-// function removeChar(str) {
-//   return str.slice(1,- 1);
-// }
-// console.log(removeChar('функція'));
+// Написати функцію для пошуку найменшого числа в масиві. За умови, що числа унікальні (не повторюються).
+// const findSmallesNumber = function (numbers) {
+//   let smallestNumber = numbers[0];
 
-// const keys = document.querySelectorAll('.key');
-
-// function updateColors() {
-//   for (const key of keys) {
-//     const hue = Math.floor(Math.random() * 360);
-//     key.style.color = `hsl(${hue}, 100%, 50%)`;
+//   for (const number of numbers) {
+//     if (number < smallestNumber) {
+//       smallestNumber = number;
+//     }
 //   }
-// }
+//   return smallestNumber;
+// };
 
-// setInterval(updateColors, 1000);
-const magicBtn = document.querySelector('.js-magic-btn');
-
-magicBtn.addEventListener('click', ()=>{const imageEl = document.querySelector('.hero__image');
-console.log('imageEl', imageEl);
-console.log(imageEl.src);
-imageEl.src =
-  'https://images.pexels.com/photos/8434606/pexels-photo-8434606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
-})
+// console.log(findSmallesNumber([3, 8, 12, -2, 15]));
+// console.log(findSmallesNumber([100, 54, 8, 12, 47]));
+// console.log(findSmallesNumber([7, 21, 84, 15, 4]));
