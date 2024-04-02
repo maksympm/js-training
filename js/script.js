@@ -810,7 +810,35 @@
 //   }
 //   return smallestNumber;
 // };
-
 // console.log(findSmallesNumber([3, 8, 12, -2, 15]));
 // console.log(findSmallesNumber([100, 54, 8, 12, 47]));
 // console.log(findSmallesNumber([7, 21, 84, 15, 4]));
+
+// Написати функцію, яка замінює регістр кожного символа в рядку на протилежний.
+// const changeCase = function (string) {
+//   const letters = string.split('');
+//   let invertedString = '';
+
+//   for (const letter of letters) {
+//     const isInLowerCase = letter === letter.toLowerCase();
+
+//     invertedString += isInLowerCase
+//       ? letter.toUpperCase()
+//       : letter.toLowerCase();
+//   }
+
+//   return invertedString;
+// };
+// console.log(changeCase('qweRTY'));
+// console.log(changeCase('mAnGo'));
+// console.log(changeCase('AjAx'));
+
+// Написати функцію slugify(string), яка отримує рядок і повертає URL-slug.
+// Рядок складається тільки з літер і пробілів.
+// const slugify = function (string) {
+//   return string.toLowerCase().split(' ').join('-');
+// };
+
+// console.log(slugify('Top 10 benefits of React feamework'));
+// console.log(slugify('Azure Static Web Apps are Awesome'));
+// console.log(slugify('Technical writing tips for non-native English speakers'));
