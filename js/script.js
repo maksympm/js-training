@@ -842,3 +842,41 @@
 // console.log(slugify('Top 10 benefits of React feamework'));
 // console.log(slugify('Azure Static Web Apps are Awesome'));
 // console.log(slugify('Technical writing tips for non-native English speakers'));
+
+// Метод Array.from (old school)
+// const fn = function () {
+//   console.log(arguments);
+
+//   const args = Array.from(arguments);
+
+//   console.log(args);
+// };
+
+// fn(1, 2, 3);
+// fn(1, 2, 3, 4, 5);
+// fn(1, 2, 3, 4, 5, 6, 7);
+
+// Операція rest. В параметр args збираються всі елементи які були передані в дану функцію.
+// Три крапки і довільне ім'я змінної. Перед args можна додати будь-яку
+// const fn = function (a, b, c, ...args) {
+//   console.log(`${a} ${b} ${c}`);
+//   console.log(args);
+// };
+
+// fn('hello', 1, 2, 3);
+// fn('aloha', 1, 2, 3, 4, 5);
+// fn('hi', 1, 2, 3, 4, 5, 6, 7);
+
+// Написати функцію для складання довільної кількості аргументів(чисел)
+// const add = function (...args) {
+//     console.log(args);
+    
+//     let total = 0;
+
+//     for (const arg of args) {
+//         total += arg;
+//     }
+//     return total;
+// };
+// console.log(add(1, 2, 3));
+// console.log(add(1, 2, 3, 4, 5, 6));
