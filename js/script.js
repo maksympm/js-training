@@ -870,7 +870,7 @@
 // Написати функцію для складання довільної кількості аргументів(чисел)
 // const add = function (...args) {
 //     console.log(args);
-    
+
 //     let total = 0;
 
 //     for (const arg of args) {
@@ -880,3 +880,28 @@
 // };
 // console.log(add(1, 2, 3));
 // console.log(add(1, 2, 3, 4, 5, 6));
+
+// Написати функціб filterNumbers(array[, number1, ///]) яка:
+// - першим аргументом приймає масив чисел
+// - після першого аргументу може бути довільна кількість інших аргументів які будуть числами.
+// - функція має повернути новий масив, в якому будуть тільки ті аргументи, починаючи з другого,
+// які мають аналог в оригінальному масиві.
+// const filterNumbers = function (array, ...args) {
+//   console.log('array: ', array);
+//   console.log('args: ', args);
+
+//   const uniqueElements = [];
+
+//   for (const element of array) {
+//     if (args.includes(element)) {
+//       uniqueElements.push(element);
+//       console.log(`${element} є скрізь!`);
+//     }
+//   }
+
+//   console.log(uniqueElements);
+// };
+
+// console.log(filterNumbers([1, 2, 3, 4, 5], 10, 15, 2, 3, 8));
+// console.log(filterNumbers([10, 15, 25, 30], 23, 30, 18, 15));
+// console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64));
