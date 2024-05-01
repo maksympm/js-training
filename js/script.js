@@ -104,13 +104,13 @@
 // console.log(!true) - виведе false
 
 // Написати скрипт, який перевіряє входження числа у відрізок зазначений в x1 та x2
-// const x1 = 10;
-// const x2 = 30;
-// const number = 50;
-// console.log(`Число ${number} входить до відрізку ${x1}? `, number < x1);
-// console.log(`Число ${number} входить до відрізку більше ${x2}? `, number > x2);
-// console.log(`Число ${number} входить до відрізку від ${x1} до ${x2} ? `, number > x1 && number < x2);
-// console.log(`Число ${number} входить до відрізку до ${x1}, або після ${x2} ? `, number < x1 || number > x2);
+const x1 = 10;
+const x2 = 30;
+const number = 50;
+console.log(`Число ${number} входить до відрізку ${x1}? `, number < x1);
+console.log(`Число ${number} входить до відрізку більше ${x2}? `, number > x2);
+console.log(`Число ${number} входить до відрізку від ${x1} до ${x2} ? `, number > x1 && number < x2);
+console.log(`Число ${number} входить до відрізку до ${x1}, або після ${x2} ? `, number < x1 || number > x2);
 
 // Напиши скрипт який перевіряє можливість відкрити чат з коричстувачем. Користувач має бути:
 // другом
