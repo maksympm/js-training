@@ -905,3 +905,28 @@
 // console.log(filterNumbers([1, 2, 3, 4, 5], 10, 15, 2, 3, 8));
 // console.log(filterNumbers([10, 15, 25, 30], 23, 30, 18, 15));
 // console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64));
+
+
+// const randomColors = [];
+// for (let i = 0; i < 1; i++) {
+//   const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+//   randomColors.push(randomColor);
+// }
+// const max = randomColors.length - 1;
+// const min = 0;
+// const index = Math.round(Math.random() * (max - min) + min);
+// const color = randomColors[index];
+// console.log(color);
+// document.body.style.backgroundColor = color;
+
+const randomColors = [];
+for (let i = 0; i < 1; i+=1) {
+  const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  randomColors.push(randomColor);
+}
+const max = randomColors.length - 1;
+const min = 0;
+const index = Math.round(Math.random() * (max - min) + min);
+const color = randomColors[index];
+console.log(color);
+document.body.style.backgroundColor = color;
